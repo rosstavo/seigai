@@ -13,10 +13,24 @@
     <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
     <link rel="manifest" href="imgs/site.webmanifest">
 
+    <style>
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1000;
+            background-color: black;
+        }
+    </style>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
 
 </head>
-<body>
+<body data-type="parallax">
+
+    <div class="preloader"><span class="preloader-js"></span></div>
     
     <main class="site-main">
         <h1 class="title">Kunio's Guide to Seigai</h1>
@@ -47,13 +61,36 @@
 
             <p>…and lots more besides!</p>
 
+            <div class="spacer"></div>
+
             <p><a href="https://drive.google.com/file/d/1ZUkDMszaxFZ7JlPIeu9woQN3gLpxy3sq/view" target="_blank"
-                    class="btn">Free Download</a></p>
+                    class="btn"><span class="icon-file-pdf"></span> Download (v2.0)</a> </p>
+            <p><small><em>Last updated October 27th 2020</em></small></p>
+
+            <div class="spacer"></div>
+
+            <h3>A note from Ross, the author</h3>
+            <p><em>Kunio’s Guide to Seigai: Second Release</em> will always be free! Having art commissioned, employing proof-readers,
+                and making sure they got paid properly did however did cost a fair amount of my own money. If you’d consider helping me cover some of the costs of this guide and support my future work by buying me a coffee, I
+                will be very grateful. Just click on the button below! Cheers. —Ross</p>
+            <p>
+                <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+                <script type='text/javascript'>
+                    kofiwidget2.init('Support Me on Ko-fi', '#e2bf60', 'Q5Q119KH8');
+                    kofiwidget2.draw();
+                </script>
+            </p>
 
         </div>
     </main>
 
-    <script src="js/scripts.min.js" charset="utf-8"></script>
+    <script>
+        $(window).on('load', function() {
+            $('.preloader').fadeOut(250);
+        } );
+    </script>
+
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>

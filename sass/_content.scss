@@ -10,6 +10,7 @@ body {
     align-items: center;
     min-height: 100vh;
     position: relative;
+    transition: background-position 0.1s linear;
     
     &:after {
         content: '';
@@ -36,6 +37,7 @@ body {
     border-right: 1px solid #e0dcdc;
     border-top: 0;
     border-bottom: 0;
+    animation: floatIn 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
     &.wide {
         max-width: 48em;
@@ -62,6 +64,17 @@ body {
         -webkit-transform: rotateX(180deg);
         transform: rotateX(180deg);
         bottom: -10px;
+    }
+}
+
+@keyframes floatIn {
+    from {
+        transform: translateY(1em);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
