@@ -426,9 +426,9 @@ body {
     background-color: rgba(0, 0, 0, 0.5); }
 
 .site-main {
-  max-width: 40em;
+  max-width: 42em;
   margin: 0 auto;
-  padding: 2em;
+  padding: 2em 3em;
   position: relative;
   z-index: 10;
   background: white;
