@@ -1,0 +1,99 @@
+body {
+    padding: 2em;
+    text-align: center;
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(black,0.5);
+    }
+}
+
+.site-main {
+    max-width: 40em;
+    margin: 0 auto;
+    // background-color: black;
+    padding: 2em;
+    position: relative;
+    z-index: 10;
+
+    background: white;
+    border-left: 1px solid #e0dcdc;
+    border-right: 1px solid #e0dcdc;
+    border-top: 0;
+    border-bottom: 0;
+
+    &.wide {
+        max-width: 48em;
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        background-image: url('imgs/border_texture_wide.png');
+        background-size: 100% 100%;
+        height: 20px;
+        position: absolute;
+        left: -1px;
+        right: -1px;
+    }
+
+    &:before {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        top: -13px;
+    }
+
+    &:after {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        bottom: -10px;
+    }
+}
+
+iframe {
+    max-width: 100%;
+}
+
+@media screen and ( min-width: $breakpoint-xsmall ) {
+    body {
+        padding: 4em;
+    }
+
+    .site-main {
+        padding: 3em;
+    }
+}
+
+.map {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.google-meet {
+    height: 90vh;
+    border: 2px solid red;
+}
+
+.panel img {
+    max-width: 100%;
+}
+
+.spacer {
+    height: 2em;
+}

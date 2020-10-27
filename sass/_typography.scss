@@ -1,0 +1,99 @@
+html {
+    font-family: $font__family-main;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    font-variant-numeric: lining-nums;
+}
+
+h1 {
+	font-family: $font__family-title;
+	text-transform: uppercase;
+}
+
+h2, h3, h4, h5 {
+    font-family: $font__family-heading;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 500;
+    font-style: normal;
+    line-height: 1.25;
+}
+
+h1 {
+	color: $color--dark;
+  	-webkit-text-stroke: 1px $color--primary;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-size: $font__size-small;
+}
+
+@media screen and ( min-width: $breakpoint-xsmall ) {
+	body,
+	button,
+	input,
+	select,
+	optgroup,
+	textarea { font-size: $font__size-small; }
+}
+
+@media screen and ( min-width: $breakpoint-medium ) {
+	body,
+	button,
+	input,
+	select,
+	optgroup,
+	textarea { font-size: $font__size-medium; }
+}
+
+@media screen and ( min-width: $breakpoint-large ) {
+	body,
+	button,
+	input,
+	select,
+	optgroup,
+	textarea { font-size: $font__size-large; }
+}
+
+@media screen and ( min-width: $breakpoint-xlarge ) {
+	body,
+	button,
+	input,
+	select,
+	optgroup,
+	textarea { font-size: $font__size-xlarge; }
+}
+
+.title {
+    margin-bottom: 0;
+    font-size: 3em;
+}
+
+.subtitle {
+    margin-top: 0;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+li {
+	list-style: none;
+	font-size: 1.125em;
+	font-family: $font__family-heading;
+	margin-bottom: 0.5em;
+
+	small {
+		font-family: $font__family-main;
+	}
+}

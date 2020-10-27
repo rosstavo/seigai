@@ -1,0 +1,24 @@
+
+$font__size-base: 10px;
+$font__size-small: $font__size-base + 1px;
+$font__size-medium: $font__size-base + 3px;
+$font__size-large: $font__size-base + 5px;
+$font__size-xlarge: $font__size-base + 7px;
+
+$breakpoint-base: 333px;
+
+$breakpoint-xsmall: $breakpoint-base;
+$breakpoint-small: $breakpoint-base * 1.5;
+$breakpoint-medium: $breakpoint-base * 2;
+$breakpoint-large: $breakpoint-base * 3;
+$breakpoint-xlarge: $breakpoint-base * 4;
+
+$gutter__size: 4em;
+
+$color--dark: #801419;
+$color--light: #F4F0EB;
+$color--primary: #e2bf60;
+
+$font__family-main: 'monarcha', serif;
+$font__family-heading: 'arpona', serif;
+$font__family-title: 'modesto-condensed', serif;
