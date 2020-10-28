@@ -1,0 +1,13 @@
+.cc_css_reboot {
+    font-family: $font__family-heading !important;
+
+    h1 {
+        -webkit-text-stroke: 0px;
+    }
+
+    &.dark.cc_dialog button.cc_b_ok,
+    &.dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer .cc_cp_f_save button {
+        color: white;
+        background-color: $color--dark;
+    }
+}

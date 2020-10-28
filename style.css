@@ -578,3 +578,11 @@ a.btn {
   content: '\f1c1'; }
 
 /* '' */
+.cc_css_reboot {
+  font-family: "arpona", serif !important; }
+  .cc_css_reboot h1 {
+    -webkit-text-stroke: 0px; }
+  .cc_css_reboot.dark.cc_dialog button.cc_b_ok,
+  .cc_css_reboot.dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer .cc_cp_f_save button {
+    color: white;
+    background-color: #801419; }
