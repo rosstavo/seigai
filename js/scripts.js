@@ -265,7 +265,7 @@
 
             $bgobj.css({ backgroundPosition: coords });
 
-            console.log(coords);
+            // console.log(coords);
 
         } ) );
     });
