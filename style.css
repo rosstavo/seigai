@@ -488,7 +488,16 @@ iframe {
 .spacer {
   height: 2em; }
 
-.btn {
+a {
+  font-weight: bold; }
+
+.site-main a {
+  color: #801419;
+  text-decoration: none; }
+  .site-main a:hover {
+    text-decoration: underline; }
+
+a.btn {
   display: block;
   padding: 0.75em 1em 0.6em;
   text-decoration: none;
@@ -500,21 +509,19 @@ iframe {
   transition: all 0.1s ease;
   border-radius: 7px;
   font-family: arpona, sans-serif; }
-  .btn:hover {
+  a.btn:hover {
     background-color: #540d10;
     border: 2px solid #e2bf60;
-    color: #e2bf60; }
-  .btn.btn-alt {
+    color: #e2bf60;
+    text-decoration: none; }
+  a.btn.btn-alt {
     background-color: black;
     border-color: black;
     font-size: 0.925em; }
-    .btn.btn-alt:hover {
+    a.btn.btn-alt:hover {
       background-color: white;
       border-color: black;
       color: black; }
-
-a {
-  font-weight: bold; }
 
 @font-face {
   font-family: 'seigai';
