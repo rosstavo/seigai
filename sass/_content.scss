@@ -8,6 +8,7 @@ body {
     display: flex;
     align-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     position: relative;
     transition: background-position 0.1s linear;
@@ -33,24 +34,39 @@ body {
 }
 
 
-.site-main {
+.site-main,
+.adventure {
     max-width: 42em;
-    margin: 0 auto;
+    margin: 2em auto;
     // background-color: black;
     padding: 2em 3em;
     position: relative;
     z-index: 10;
-
-    background: white;
-    border-left: 1px solid #e0dcdc;
-    border-right: 1px solid #e0dcdc;
-    border-top: 0;
-    border-bottom: 0;
     animation: floatIn 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
     &.wide {
         max-width: 48em;
     }
+}
+
+@keyframes floatIn {
+    from {
+        transform: translateY(1em);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.paper {
+    position: relative;
+    background: white;
+    border-left: 1px solid #e0dcdc;
+    border-right: 1px solid #e0dcdc;
+    border-top: 0;
+    border-bottom: 0;
 
     &:before,
     &:after {
@@ -73,17 +89,6 @@ body {
         -webkit-transform: rotateX(180deg);
         transform: rotateX(180deg);
         bottom: -10px;
-    }
-}
-
-@keyframes floatIn {
-    from {
-        transform: translateY(1em);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
     }
 }
 

@@ -5,12 +5,7 @@ html {
     font-variant-numeric: lining-nums;
 }
 
-h1 {
-	font-family: $font__family-title;
-	text-transform: uppercase;
-}
-
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
     font-family: $font__family-heading;
 }
 
@@ -22,7 +17,20 @@ h1, h2, h3, h4, h5 {
 
 h1 {
 	color: $color--dark;
-  	-webkit-text-stroke: 1px $color--primary;
+	-webkit-text-stroke: 1px $color--primary;
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+h4 {
+	font-size: 1.125em;
 }
 
 body,
@@ -72,7 +80,8 @@ textarea {
 
 .title {
     margin: 0;
-    font-size: 4em;
+	font-family: $font__family-title;
+	text-transform: uppercase;
 }
 
 .subtitle {
