@@ -21,7 +21,7 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(black,0.5);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 25%);
         box-shadow: inset 0 0 5em rgba(black, 0.5);
     }
 }
@@ -33,6 +33,18 @@ body {
     }
 }
 
+.site-header {
+    color: white;
+    position: relative;
+    z-index: 10;
+    padding: 20vh 1em;
+    font-size: 1.5em;
+
+    .title,
+    .subtitle {
+        text-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.5);
+    }
+}
 
 .site-main,
 .adventure,
