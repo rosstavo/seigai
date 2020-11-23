@@ -397,6 +397,10 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 0.05em; }
 
+.lead {
+  font-size: 1.25em;
+  font-weight: bold; }
+
 ul {
   margin-left: 0;
   padding-left: 0; }
@@ -440,15 +444,17 @@ body {
     background-size: auto 110%; } }
 
 .site-main,
-.adventure {
+.adventure,
+.footer {
   max-width: 42em;
-  margin: 2em auto;
+  margin: 4em auto;
   padding: 2em 3em;
   position: relative;
   z-index: 10;
   animation: floatIn 2s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .site-main.wide,
-  .adventure.wide {
+  .adventure.wide,
+  .footer.wide {
     max-width: 48em; }
 
 @keyframes floatIn {
