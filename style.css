@@ -399,17 +399,16 @@ textarea {
   font-size: 1.25em;
   font-weight: bold; }
 
-ul {
+.features {
   margin-left: 0;
   padding-left: 0; }
-
-li {
-  list-style: none;
-  font-size: 1.125em;
-  font-family: "arpona", serif;
-  margin-bottom: 0.5em; }
-  li small {
-    font-family: "monarcha", serif; }
+  .features li {
+    list-style: none;
+    font-size: 1.125em;
+    font-family: "arpona", serif;
+    margin-bottom: 0.5em; }
+    .features li small {
+      font-family: "monarcha", serif; }
 
 body {
   padding: 2em;
@@ -450,6 +449,8 @@ body {
   .site-header .title,
   .site-header .subtitle {
     text-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.5); }
+  .page-changelog .site-header {
+    padding: 5vh 1em; }
 
 .site-main,
 .adventure,
@@ -520,6 +521,9 @@ iframe {
 
 .spacer {
   height: 2em; }
+
+.page-changelog .site-main {
+  text-align: left; }
 
 a {
   font-weight: bold; }

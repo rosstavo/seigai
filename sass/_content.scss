@@ -44,6 +44,10 @@ body {
     .subtitle {
         text-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.5);
     }
+
+    .page-changelog & {
+        padding: 5vh 1em;
+    }
 }
 
 .site-main,
@@ -136,4 +140,8 @@ iframe {
 
 .spacer {
     height: 2em;
+}
+
+.page-changelog .site-main {
+    text-align: left;
 }

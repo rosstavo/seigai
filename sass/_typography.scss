@@ -94,18 +94,19 @@ textarea {
 	font-weight: bold;
 }
 
-ul {
+.features {
 	margin-left: 0;
 	padding-left: 0;
-}
 
-li {
-	list-style: none;
-	font-size: 1.125em;
-	font-family: $font__family-heading;
-	margin-bottom: 0.5em;
+	li {
+		list-style: none;
+		font-size: 1.125em;
+		font-family: $font__family-heading;
+		margin-bottom: 0.5em;
 
-	small {
-		font-family: $font__family-main;
+		small {
+			font-family: $font__family-main;
+		}
 	}
 }
+
