@@ -531,7 +531,7 @@ a {
     text-decoration: underline; }
 
 a.btn {
-  display: block;
+  display: inline-block;
   padding: 0.75em 1em 0.6em;
   text-decoration: none;
   text-transform: uppercase;
@@ -555,6 +555,9 @@ a.btn {
       background-color: white;
       border-color: black;
       color: black; }
+  .site-main a.btn,
+  .adventure a.btn {
+    display: block; }
 
 .npc-table {
   width: 100%;
