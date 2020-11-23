@@ -1,0 +1,29 @@
+.npc-table {
+    width: 100%;
+    border: none;
+    border-spacing: 0;
+
+    td {
+        padding: 0.25em 0.5em;
+        margin: 0;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    tr:nth-of-type(even) {
+        background-color: rgba(green,0.1);
+    }
+
+    td:nth-child(1),
+    td:nth-child(2) {
+        text-align: left;
+    }
+}
+

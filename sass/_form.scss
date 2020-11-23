@@ -1,0 +1,12 @@
+.lock {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('imgs/unlock.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    input:checked + & {
+        background-image: url('imgs/lock.svg');
+    }
+}

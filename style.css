@@ -475,7 +475,7 @@ iframe {
 
 @media screen and (min-width: 333px) {
   body {
-    padding: 4em; }
+    padding: 8em 4em; }
   .site-main {
     padding: 3em; } }
 
@@ -528,6 +528,34 @@ a.btn {
       background-color: white;
       border-color: black;
       color: black; }
+
+.npc-table {
+  width: 100%;
+  border: none;
+  border-spacing: 0; }
+  .npc-table td {
+    padding: 0.25em 0.5em;
+    margin: 0; }
+  .npc-table input[type="text"],
+  .npc-table input[type="number"] {
+    width: 100%; }
+  .npc-table input[type="checkbox"] {
+    display: none; }
+  .npc-table tr:nth-of-type(even) {
+    background-color: rgba(0, 128, 0, 0.1); }
+  .npc-table td:nth-child(1),
+  .npc-table td:nth-child(2) {
+    text-align: left; }
+
+.lock {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("imgs/unlock.svg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  input:checked + .lock {
+    background-image: url("imgs/lock.svg"); }
 
 @font-face {
   font-family: 'seigai';
